@@ -1,5 +1,0 @@
-streamlit
-numpy
-joblib
-sciket-learn
-pip
