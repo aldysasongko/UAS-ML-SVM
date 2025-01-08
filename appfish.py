@@ -14,9 +14,9 @@ st.title("Prediksi Spesies Ikan menggunakan SVM")
 
 # Input dari pengguna
 st.header("Masukkan Data Ikan")
-length = st.number_input("Panjang Ikan (cm)", value=0.0, format="%.2f")
-weight = st.number_input("Berat Ikan (kg)", value=0.0, format="%.2f")
-w_l_ratio = st.number_input("Rasio Berat/Panjang", value=0.0, format="%.2f")
+length = st.number_input("Panjang Ikan (cm)", min_value=0.0, format="%.2f")
+weight = st.number_input("Berat Ikan (kg)", min_value=0.0, format="%.2f")
+w_l_ratio = st.number_input("Rasio Berat/Panjang", min_value=0.0, format="%.2f")
 
 if st.button('Prediksi'):
     # Menyiapkan data input
